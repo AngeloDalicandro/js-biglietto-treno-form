@@ -1,5 +1,4 @@
-// Seleziono il bottone
-
+// Imposto il bottone "Genera"
 const generateButton = document.getElementById('generate-ticket');
 
 generateButton.addEventListener('click',
@@ -51,4 +50,20 @@ generateButton.addEventListener('click',
         document.getElementById("your-ticket").classList.add('active');
     }
 )
+
+// Imposto il bottone "Annulla"
+const deleteButton = document.getElementById("delete-ticket");
+
+deleteButton.addEventListener('click',
+    function() {
+        //resetto i valori dei dati raccolti
+        document.getElementById("user-name").value = '';
+        document.getElementById("user-km").value = '';
+        document.getElementById("user-age").value = 'regular';
+
+        // Rendo visibile la sezione riguardante il biglietto
+        document.getElementById("your-ticket").classList.remove('active');
+    }
+)
+
 
