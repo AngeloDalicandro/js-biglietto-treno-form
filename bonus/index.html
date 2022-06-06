@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trenitaglia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section>
+        <h2>calcola il prezzo del tuo biglietto</h2>
+        <div class="container">
+            <div class="card radius">
+
+                <div class="user-form">
+
+                    <div class="form-item">
+                        <label for="user-name">Nome e cognome</label>
+                        <input type="text" id="user-name">
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="user-km">Km del viaggio</label>
+                        <input type="number" id="user-km">
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="user-age">Fascia d'età</label>
+                        <select id="user-age">
+                            <option value="regular">Maggiorenne</option>
+                            <option value="junior">Minorenne</option>
+                            <option value="senior">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="buttons">
+    
+                    <button class="btn" id="generate-ticket">Genera</button>
+    
+                    <button class="btn" id="delete-ticket">Annulla</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="your-ticket" class="d-none">
+
+        <h2>il tuo biglietto</h2>
+
+        <div class="container">
+            <div class="card">
+
+                <h3>DETTAGLIO PASSEGGERO</h3>
+
+                <div class="ticket-details">
+                    <div class="user-name">
+                        NOME PASSEGGERO <br>
+                        <span id="user-name-selected"></span>
+                    </div>
+    
+                    <div class="travel-details">
+                        <div class="user-offer">
+                            Offerta 
+        
+                            <span id="user-offer"></span>
+                        </div>
+        
+                        <div class="user-carriage">
+                            Carrozza
+        
+                            <span id="user-carriage"></span>
+                        </div>
+
+                        <div class="user-seat">
+                            Posto
+        
+                            <span id="user-seat"></span>
+                        </div>
+        
+                        <div class="cp-code">
+                            Codice CP
+        
+                            <span id="user-cp-code"></span>
+                        </div>
+        
+                        <div class="ticket-price">
+                            Costo biglietto
+                            
+                            <span>
+                                <span id="ticket-price"></span>&euro;
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

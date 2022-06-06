@@ -1,0 +1,140 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMONS */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #b91450;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.red {
+    color: b91450;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+}
+
+.radius {
+    border-radius: 1rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* ticket calculator section */
+
+.user-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-item {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #b91450;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+
+
+input, select {
+    margin-top: 1rem;
+    padding: 3px 0;
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+
+input {
+    text-align: center;
+
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn {
+    margin: 0 1rem;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #b91450;
+    border-radius: 0.25rem;
+}
+
+.btn:hover {
+    border: 2px solid orange;
+}
+
+/* your ticket section */
+
+.ticket-details {
+    display: flex;
+    height: 8rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.ticket-details div {
+    display: flex;
+}
+
+.travel-details {
+    width: 80%;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.travel-details div {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.travel-details span {
+    font-weight: 500;
+}
+
+.user-name {
+    flex-direction: column;
+    width: 20%;
+    background-color: #808080;
+    padding: 1rem;
+}
+
+
