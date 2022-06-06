@@ -63,7 +63,9 @@ h2 {
 }
 
 label {
-    color: b91450;
+    color: #b91450;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 
 
@@ -72,6 +74,7 @@ input, select {
     margin-top: 1rem;
     padding: 3px 0;
     font-weight: 600;
+    border-radius: 0.25rem;
 }
 
 input {
@@ -89,4 +92,49 @@ input {
     padding: 5px;
     font-size: 1rem;
     font-weight: 800;
+    color: #b91450;
+    border-radius: 0.25rem;
 }
+
+.btn:hover {
+    border: 2px solid orange;
+}
+
+/* your ticket section */
+
+.ticket-details {
+    display: flex;
+    height: 8rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.ticket-details div {
+    display: flex;
+}
+
+.travel-details {
+    width: 80%;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.travel-details div {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.travel-details span {
+    font-weight: 500;
+}
+
+.user-name {
+    flex-direction: column;
+    width: 20%;
+    background-color: #808080;
+    padding: 1rem;
+}
+
+
