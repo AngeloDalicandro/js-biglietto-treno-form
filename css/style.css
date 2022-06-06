@@ -4,3 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMONS */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #b91450;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+}
+
+.radius {
+    border-radius: 1rem;
+}

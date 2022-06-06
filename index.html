@@ -9,7 +9,92 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+    
+    <section>
+        <h2>calcola il prezzo del tuo biglietto</h2>
+        <div class="container">
+            <div class="card radius">
+
+                <div class="user-form">
+
+                    <div class="form-item">
+                        <label for="user-name">Nome e cognome</label>
+                        <input type="text" id="user-name">
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="user-km">Km del viaggio</label>
+                        <input type="text" id="user-km">
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="user-age">Fascia d'età</label>
+                        <select id="user-age">
+                            <option value="regular">Maggiorenne</option>
+                            <option value="junior">Minorenne</option>
+                            <option value="senior">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="buttons">
+    
+                    <button id="generate-ticket">Genera</button>
+    
+                    <button id="delete-ticket">Annulla</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="your-ticket">
+
+        <h2>il tuo biglietto</h2>
+
+        <div class="container">
+            <div class="card">
+
+                <h3>DETTAGLIO PASSEGGERO</h3>
+
+                <div>
+                    NOME PASSEGGERO
+                    <span id="user-name-selected"></span>
+                </div>
+
+                <div>
+                    Offerta
+
+                    <span id="user-offer"></span>
+                </div>
+
+                <div>
+                    Carrozza
+
+                    <span id="user-carriage"></span>
+                </div>
+
+                <div>
+                    Codice CP
+
+                    <span id="user-cp-code"></span>
+                </div>
+
+                <div>
+                    Costo biglietto
+
+                    <span id="ticket-price"></span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
     <script type="text/javascrip" src="js/script.js"></script>
 </body>
 </html>
